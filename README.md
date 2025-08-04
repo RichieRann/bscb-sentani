@@ -1,12 +1,24 @@
-# React + Vite
+# BSCB Sentani
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple website for Brainstorm Cafe Box Sentani
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+How to run the project locally:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Not having any cool feature, just a simple website.
+
+## Technologies Used
+
+- React
+- Vite
+- Tailwind CSS
+
+## Author
