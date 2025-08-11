@@ -1,14 +1,26 @@
-import Navbar from "../components/Navbar.jsx"
+import React, { useState } from "react"
+import Navbar from "../components/Navbar"
+import HomeSection from "../components/HomeSection"
+import ProductsSection from "../components/ProductsSection"
+import AboutSection from "../components/AboutSection"
+import ContactSection from "../components/ContactSection"
 
-const Home = () => {
+export default function Home() {
+  const [preview, setPreview] = useState(null)
+
   return (
-    <>
+    <div className="relative bg-amber-50 min-h-screen font-sans overflow-x-hidden">
       <Navbar />
-      <div>
-        <h1 className="text-2xl font-extrabold">Welcome to the Home Page</h1>
-        <p>This is the home page of our application.</p>
-      </div>
-    </>
+      <HomeSection />
+      <ProductsSection
+        preview={preview}
+        setPreview={setPreview}
+      />
+      <AboutSection />
+      <ContactSection />
+      <footer className="bg-amber-950 text-white py-6 text-center text-sm">
+        &copy; {new Date().getFullYear()} KOPI-U. Crafted with ☕ and ❤️.
+      </footer>
+    </div>
   )
 }
-export default Home
